@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+swagger:
+  base-package: com.example.demo
+  title: demo
+  description: demo 接口手册
+  authorization:
+    key-name: Authorization
+  enabled: true
